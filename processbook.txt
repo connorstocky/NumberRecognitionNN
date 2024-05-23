@@ -1,0 +1,8 @@
+Entry 1:
+- Set up Github repository
+- Researched into dataset and downloaded necessary files.
+- Worked on LFS to store the large MNIST data sets
+- imported libraries i know i will need
+- Created function to convert MNIST data into an array for use by the NN
+- Watched videos explaining the dataset and how the labels and pixels are arranged. 
+- Researched weightings and biases for layers of the NN.

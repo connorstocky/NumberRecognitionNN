@@ -1,0 +1,3 @@
+Will finalise later: Short summary:
+- Build a NN to learn to recognise handwritten digits 1-9 from the MNIST dataset
+- I am to learn about the basic workings of NN and will do extensive research 
