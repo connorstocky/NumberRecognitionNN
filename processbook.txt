@@ -6,3 +6,11 @@ Entry 1:
 - Created function to convert MNIST data into an array for use by the NN
 - Watched videos explaining the dataset and how the labels and pixels are arranged. 
 - Researched weightings and biases for layers of the NN.
+
+Entry 2:
+- Initialised parameters
+- Researched overview of process and thought to start with easy key functions such as activation functions
+- Researched into posssible activation functions
+- From research there are 3 main ones; Relu, Tanh and Sigmoid. 
+- For simplicity i will start by choosing Rectified Linear and then change later to compare if needed
+- Researched softmax Function and implemeneted function

@@ -14,6 +14,24 @@ def convert_csv_to_array(filepath):
 
     return answers, pixels
 
+def init_parameters():
+    weights1 = np.random.randn(10,784) 
+    biases1 = np.random.randn(10,1) 
+    weights2 = np.random.randn(10,784) 
+    biases2 = np.random.randn(10,1) 
+
+    return weights1, biases1, weights2, biases2
+
+#Activation Fuctions
+def activation(value):
+    return np.maximum(0, unactivated_inputs) #Relu
+    # return (np.exp(value) - np.exp(-value)) / (np.exp(value) + np.exp(-value)) # Tanh
+    # return 1.0 / (1.0 + np.exp(-value)) # Sigmoid
+
+def softmax(value):
+    return np.exp(unactivated_inputs)/np.sum(exp(unactivated_inputs))
+
+
 def main():
     #Import data for training and testing
     train_sol, train_data = convert_csv_to_array("MNIST_DATA/mnist_train.csv")
