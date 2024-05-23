@@ -14,11 +14,11 @@ def convert_csv_to_array(filepath):
 
     return answers, pixels
 
-def init_parameters():
-    weights1 = np.random.randn(10,784) 
-    biases1 = np.random.randn(10,1) 
-    weights2 = np.random.randn(10,784) 
-    biases2 = np.random.randn(10,1) 
+def init_parameters(nodes):
+    weights1 = np.random.randn(nodes,784) 
+    biases1 = np.random.randn(nodes,1) 
+    weights2 = np.random.randn(nodes,784) 
+    biases2 = np.random.randn(nodes,1) 
 
     return weights1, biases1, weights2, biases2
 
