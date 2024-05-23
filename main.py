@@ -22,14 +22,21 @@ def init_parameters(nodes):
 
     return weights1, biases1, weights2, biases2
 
+def forward_propogation(weights1, biases1, weights2, biases2, data):
+    layer1 = weights1.dot(data) + biases1 
+    layer2 = weights2.dot(activation(layer1)) + biases2
+    output = softmax(layer2)
+
+    return output
+
 #Activation Fuctions
 def activation(value):
-    return np.maximum(0, unactivated_inputs) #Relu
+    return np.maximum(0, value) #Relu
     # return (np.exp(value) - np.exp(-value)) / (np.exp(value) + np.exp(-value)) # Tanh
     # return 1.0 / (1.0 + np.exp(-value)) # Sigmoid
 
 def softmax(value):
-    return np.exp(unactivated_inputs)/np.sum(exp(unactivated_inputs))
+    return np.exp(value)/np.sum(exp(value))
 
 
 def main():
