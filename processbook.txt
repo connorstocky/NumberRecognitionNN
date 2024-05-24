@@ -22,3 +22,8 @@ Entry 4:
 - Researched forward propogation and how it worked
 - Implemented a basic forward propogation function
 - Fixed a bug in activation functions with incorrect variable naming
+
+Entry 5:
+- Researched backwards propogatoin and how to calculate the errors in both the weightings and biases 
+- Needed to one_hot encode the solutions so created a function to do that
+- Coded a delta activation function as it was needed to solve for errors
