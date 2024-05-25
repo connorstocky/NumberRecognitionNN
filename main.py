@@ -22,6 +22,15 @@ def init_parameters(nodes):
 
     return weights1, biases1, weights2, biases2
 
+def update_parameters(weights2, biases1, weights2, biases2, error_weightings1, error_biases1, error_weightings2, error_biases2, learning_rate):
+    weights1 = weights1 - learning_rate*error_weightings1
+    biases1 = biases1 - learning_rate*error_biases1
+    weights2 = weights2 - learning_rate*error_weightings2
+    biases2 = biases2 - learning_rate*error_biases2
+
+    return weights1, biases1, weights2, biases2
+
+
 def forward_propogation(weights1, biases1, weights2, biases2, data):
     layer1 = weights1.dot(data) + biases1 
     layer2 = weights2.dot(activation(layer1)) + biases2
