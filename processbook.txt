@@ -32,3 +32,11 @@ Entry 6:
 - With backwards propogation coded, next step is to use the errors to adjust the biases and weightings
 - With this in mind i added a function to update the parameters 
 - Researched learning rate and implemented into function
+
+Entry 7:
+- Lots of debuggins and fixing in this Entry
+- Implemented network training and had to adjust other functions to solutions
+- Data imported is not in the right format so am getting shape errors and am trying to fix them
+- Fixed numerous errors and code is running however there is no change from each iteration 
+- After debugging for 2 hours, the issue was the pixels were not normalised and were 255 times as big
+- Fixing this resulted in a first working iteration of the training function with accurracy reaching 91%
