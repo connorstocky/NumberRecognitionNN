@@ -46,3 +46,6 @@ Entry 8:
 
 Entry 9:
 - Drafted a jupyter notebook shifting main python code into it and expanded to graph running average
+
+Entry 10:
+- Tested different activation functions and compared their accuracies
