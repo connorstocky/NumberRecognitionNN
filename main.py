@@ -24,7 +24,7 @@ def init_parameters(nodes):
 
     return weights1, biases1, weights2, biases2
 
-'''Run forward through the network once, based on inpit weights and biases for each layer'''
+'''Run forward through the network once, based on input weights and biases for each layer'''
 def forward_propogation(weights1, biases1, weights2, biases2, input):
     layer1 = weights1.dot(input) + biases1 
     activated_layer1 = activation(layer1)

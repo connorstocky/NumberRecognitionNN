@@ -43,3 +43,6 @@ Entry 7:
 
 Entry 8:
 - Commented through the code fixing up formatting as well
+
+Entry 9:
+- Drafted a jupyter notebook shifting main python code into it and expanded to graph running average
