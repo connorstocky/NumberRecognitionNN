@@ -58,7 +58,6 @@ def prediction(activated_layer2):
 
 '''Calculate the accuracy of the network with the current set of predictions'''
 def accuracy(prediction, answer):
-    print(prediction, answer)
     return np.sum(prediction == answer)/answer.size
 
 '''Train the network by applying forward propogation and backwards propogation for a given number of iterations, changing the weights and biases each time based on how correct the network's guesses were'''
@@ -71,12 +70,18 @@ def train_network(data, answers, iterations, learning_rate, nodes, a):
         layer1, activated_layer1, layer2, activated_layer2 = forward_propogation(weights1, biases1, weights2, biases2, data)
         weights1, biases1, weights2, biases2 = backwards_propogation(data, layer1, layer2, activated_layer1, activated_layer2, weights1, weights2, biases1, biases2, answers, learning_rate, a)
 
-        #Print a running accuracy every 50 iterations
-        if (x%50 == 0):
-            print(f"Iteration: {x}")
-            print(f"Accuracy: {accuracy(prediction(activated_layer2), answers)}")
+        # #Print a running accuracy every 50 iterations
+        # if (x%50 == 0):
+        #     print(f"Iteration: {x}")
+        #     print(f"Accuracy: {accuracy(prediction(activated_layer2), answers)}")
 
     return weights1, biases1, weights2, biases2
+
+def test_network(data, answers, weights1, weights2, biases1, biases2):
+    layer1, activated_layer1, layer2, activated_layer2 = forward_propogation(weights1, biases1, weights2, biases2, data)
+    return accuracy(prediction(activated_layer2), answers)
+
+
 
 '''Below are all the activation functions required for the training'''
 def activation(value):
@@ -114,6 +119,10 @@ def main():
 
     #Train Network
     weights1, biases1, weights2, biases2 = train_network(train_data, train_sol, iterations, learning_rate, nodes, a)
+
+    accuracy = test_network(test_data, test_sol, weights1, weights2, biases1, biases2)
+
+    print(f"Accuracy: {round(100*accuracy,2)}%")
 
 
 if __name__ == "__main__":
