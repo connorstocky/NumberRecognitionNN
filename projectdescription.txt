@@ -1,3 +1,27 @@
-Will finalise later: Short summary:
-- Build a NN to learn to recognise handwritten digits 1-9 from the MNIST dataset
-- I am to learn about the basic workings of NN and will do extensive research 
+Project Description - Neural Network to Identify Handwritten Digits:
+
+Background information:
+
+Project Research Question:
+Can a Neural Network learn to accurately predict handwritten digits?
+
+Project Goal:
+The goal of this project was to get some exposure to neural networks by completing a relatively basic 
+function. At the end of this document I will reflect on the learning process. 
+
+MNIST Data Set:
+For this project I am going to be using the very common MNIST data set. The data comes with 2 seperate
+csv files, one for training the neural network and then one for testing its accuracy. 
+The data is formatted with one column for the label, representing the correct answer to the 
+digit drawn, followed by 784 rows of pixel data. The pixel data ranges from 0-255 so in the 
+code it had to be normalised from 0-1. 
+
+Neural Networks:
+Neural Networks are a learning model inspired by the function of biological processes in the brains 
+of animals. Neural networks operate by having multiple layers of neurons. 
+For each neuron in a layer, there is a specific weighting and bias which it 
+places on the data being input to it. By starting with random weightings and biases, 
+making some guesses, and then comparing the guesses to the correct answers, the network 
+changes itself by altering the weightings and biases of the input data. In addition to this, 
+after processing the data, an activation function can be applied before moving onto the next 
+layer in order to expand the possible outputs to more complex solutions rather than just linear ones. 
