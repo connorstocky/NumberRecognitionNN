@@ -40,3 +40,6 @@ Entry 7:
 - Fixed numerous errors and code is running however there is no change from each iteration 
 - After debugging for 2 hours, the issue was the pixels were not normalised and were 255 times as big
 - Fixing this resulted in a first working iteration of the training function with accurracy reaching 91%
+
+Entry 8:
+- Commented through the code fixing up formatting as well
